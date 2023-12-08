@@ -22,6 +22,7 @@ def get_from(link: str, count=10) -> str:
 raw = re.sub("\n", " ", get_from("https://ssau.ru/rasp"))
 lines = re.findall("<a href=\"/rasp/faculty/\d+\?course=1\" class=\"h3-text\">.*?</a>", raw)
 faculty = {}
+groups = {}
 for i in lines:
     new_name = re.findall(r"(?<=>).*?(?=<)", i)[0].strip()  # faculty name
     new_id = re.findall(r"\d+(?=\?)", i)[0]  # faculty id
@@ -39,6 +40,9 @@ for name, fac in tqdm(faculty.items(), desc="Processing groups"):
         for i in re.findall(r"(?<=groupId=).*?\d{4}-\d{6}D", raw):
             t = re.sub("\".*(?=\d{4}-\d{6}D)", " ", i).split()
             faculty[name]["groups"][t[1]] = t[0]
+            groups[t[1]] = t[0]
 
     with open("groups.json", "w") as f:
         json.dump(faculty, f, indent=4, ensure_ascii=False, sort_keys=True)
+    with open("groups_temp.json", "w") as f:
+        json.dump(groups, f, indent=4, ensure_ascii=False, sort_keys=True)

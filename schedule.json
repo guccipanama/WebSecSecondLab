@@ -1,5 +1,5 @@
 {
-    "title": "Юмаганов Александр Сергеевич",
+    "title": "6412-100503D",
     "weeks": [
         14,
         15,
@@ -15,7 +15,7 @@
     ],
     "weekdays": [
         [
-            "weekday-active",
+            "",
             "пн",
             "04"
         ],
@@ -40,7 +40,7 @@
             "08"
         ],
         [
-            "",
+            "weekday-active",
             "сб",
             "09"
         ]
@@ -53,10 +53,6 @@
             ],
             "items": [
                 {
-                    "is_showing": "s_item_show",
-                    "lessons": []
-                },
-                {
                     "is_showing": "",
                     "lessons": []
                 },
@@ -76,38 +72,26 @@
                     "is_showing": "",
                     "lessons": [
                         {
-                            "type": "2",
-                            "title": " Низкоуровневое программирование",
-                            "place": " 610 - 18",
+                            "type": "4",
+                            "title": " Военная подготовка",
+                            "place": " Военная кафедра - 4",
                             "staffid": "",
-                            "staff": ""
+                            "staff": "Преподаватели Военной Кафедры"
                         }
                     ]
+                },
+                {
+                    "is_showing": "s_item_show",
+                    "lessons": []
                 }
             ]
         },
         {
             "timespan": [
-                "09:45",
-                "11:20"
+                "11:30",
+                "13:05"
             ],
             "items": [
-                {
-                    "is_showing": "s_item_show",
-                    "lessons": []
-                },
-                {
-                    "is_showing": "",
-                    "lessons": []
-                },
-                {
-                    "is_showing": "",
-                    "lessons": []
-                },
-                {
-                    "is_showing": "",
-                    "lessons": []
-                },
                 {
                     "is_showing": "",
                     "lessons": []
@@ -116,13 +100,37 @@
                     "is_showing": "",
                     "lessons": [
                         {
-                            "type": "2",
-                            "title": " Низкоуровневое программирование",
-                            "place": " 610 - 18",
-                            "staffid": "",
-                            "staff": ""
+                            "type": "1",
+                            "title": " Компьютерная алгебра",
+                            "place": " 502 - 14",
+                            "staffid": "?staffId=333991624",
+                            "staff": " Веричев А.В. "
                         }
                     ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "3",
+                            "title": " Методы оптимизации",
+                            "place": " 608 - 18",
+                            "staffid": "?staffId=65417001",
+                            "staff": " Ковалев А.А. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": []
+                },
+                {
+                    "is_showing": "",
+                    "lessons": []
+                },
+                {
+                    "is_showing": "s_item_show",
+                    "lessons": []
                 }
             ]
         },
@@ -133,9 +141,125 @@
             ],
             "items": [
                 {
+                    "is_showing": "",
+                    "lessons": []
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "1",
+                            "title": " Методы оптимизации",
+                            "place": " 502 - 14",
+                            "staffid": "?staffId=65417001",
+                            "staff": " Ковалев А.А. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "3",
+                            "title": " Компьютерная алгебра",
+                            "place": " 608 - 18",
+                            "staffid": "?staffId=333991624",
+                            "staff": " Веричев А.В. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "3",
+                            "title": " Надежность и качество программного обеспечения",
+                            "place": " 608 - 18",
+                            "staffid": "?staffId=304968307",
+                            "staff": " Бердников В.А. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": []
+                },
+                {
                     "is_showing": "s_item_show",
                     "lessons": []
+                }
+            ]
+        },
+        {
+            "timespan": [
+                "15:15",
+                "16:50"
+            ],
+            "items": [
+                {
+                    "is_showing": "",
+                    "lessons": []
                 },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "1",
+                            "title": " Цифровая обработка сигналов",
+                            "place": " 517 - 14",
+                            "staffid": "?staffId=432837452",
+                            "staff": " Юзькив Р.Р. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "3",
+                            "title": " Цифровая обработка сигналов",
+                            "place": " 608 - 18",
+                            "staffid": "?staffId=432837452",
+                            "staff": " Юзькив Р.Р. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": [
+                        {
+                            "type": "2",
+                            "title": " Цифровая обработка сигналов",
+                            "place": " 610 - 18",
+                            "staffid": "?staffId=432837452",
+                            "staff": " Юзькив Р.Р. "
+                        }
+                    ]
+                },
+                {
+                    "is_showing": "",
+                    "lessons": []
+                },
+                {
+                    "is_showing": "s_item_show",
+                    "lessons": [
+                        {
+                            "type": "2",
+                            "title": " Безопасность сетей ЭВМ",
+                            "place": " 102а - 3",
+                            "staffid": "?staffId=259269374",
+                            "staff": " Ротенштейн И.В. "
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "timespan": [
+                "17:00",
+                "18:35"
+            ],
+            "items": [
                 {
                     "is_showing": "",
                     "lessons": []
@@ -150,11 +274,31 @@
                 },
                 {
                     "is_showing": "",
-                    "lessons": []
+                    "lessons": [
+                        {
+                            "type": "2",
+                            "title": " Цифровая обработка сигналов",
+                            "place": " 610 - 18",
+                            "staffid": "?staffId=432837452",
+                            "staff": " Юзькив Р.Р. "
+                        }
+                    ]
                 },
                 {
                     "is_showing": "",
                     "lessons": []
+                },
+                {
+                    "is_showing": "s_item_show",
+                    "lessons": [
+                        {
+                            "type": "2",
+                            "title": " Безопасность сетей ЭВМ",
+                            "place": " 102а - 3",
+                            "staffid": "?staffId=259269374",
+                            "staff": " Ротенштейн И.В. "
+                        }
+                    ]
                 }
             ]
         }

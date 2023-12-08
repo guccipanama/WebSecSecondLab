@@ -1,8 +1,9 @@
 from flask import Flask, request, render_template, redirect
-from json import load
+from json import load, dumps
+import ast
 import get_schedule
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="static")
 
 
 @app.route("/")
@@ -14,8 +15,37 @@ def post_faculties():
     faculties = {}
     for faculty, groups in data.items():
         faculties[faculty] = groups['id']
-
     return render_template('faculties.html', faculties=faculties)
+
+@app.route("/search")
+def post_search():
+    searchText = request.args.get('searchText', type=str)
+
+    with open("groups_temp.json", encoding='utf-8') as f:
+        data1 = load(f)
+    with open("staff.json", encoding='utf-8') as f:
+        data2 = load(f)
+
+    searchGroups = {}
+    for group, id in data1.items():
+        if searchText in group:
+            searchGroups[group] = id
+
+    staff = {} 
+    for teacher, id in data2.items():
+        if searchText in teacher:
+            staff[teacher] = id
+    return render_template('search.html', staff=staff, groups=searchGroups, searchText=searchText)
+
+@app.route("/staff")
+def post_staff():
+    with open("staff.json", encoding='utf-8') as f:
+        data = load(f)
+
+    staff = {} 
+    for teacher, id in data.items():
+        staff[teacher] = id
+    return render_template('staff.html', staff=staff)
 
 
 @app.route("/faculties/<int:facultyId>/groups")
@@ -46,7 +76,7 @@ def post_schedule():
 
 
 @app.route("/schedule/staff")
-def post_staff():
+def post_staff_schedule():
     print(123)
     staffId = request.args.get('staffId', type=str)
     week = request.args.get('week', type=int)

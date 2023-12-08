@@ -8,7 +8,24 @@
 <body>
     <nav class="navbar navbar-dark bg-dark justify-content-between">
         <a class="navbar-brand p-2">Расписание</a>
+        <form action="/search" class="form-inline">
+            <div class="row">
+                <div class="col-8">
+                    <input class="form-control" type="search" placeholder="Поиск..." name="searchText">
+                </div>
+                <div class="col-4">
+                    <button class="btn btn-outline-success" type="submit">
+                        🔍
+                    </button>
+                </div>
+            </div>
+        </form>
     </nav>
+    <div class="list-group">
+        <a href="/faculties" class="list-group-item active list-group-item-action btn fw-bold">
+            Вернуться на главную
+         </a>
+    </div>
     <div class="container-fluid">
         <div class="row">
             {% for group, id in groups.items() %}
